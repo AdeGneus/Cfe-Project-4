@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Lux Mall</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="return false">
+            <h2>Welcome to Lux Mall</h2>
+            <p>Dear Customer, due to the pandemic, kindly fill the form below to allow entry into the mall</p>
+            <label for="firstName">First name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Enter Your name" required>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" placeholder="Enter your age" required>
+            <label for="mask">Are you putting on a face mask?</label>
+            <select name="faceMask" id="mask">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <div class="btn">
+                <input type="submit" name="btn" value="Submit" onclick="return checkUser();">
+            </div>
+
+            <div class="visit">
+                <div class="allowed" id="allowedVisitor">Allowed Visitors: 0</div>
+                <div class="denied" id="deniedVisitor">Denied visitors: 0</div>
+                <div class="total" id="totalVisit">Total Visitors: 0</div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>

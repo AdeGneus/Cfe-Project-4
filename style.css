@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #26c6da;
+    font-family: Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    margin: 2rem;
+    background: #fafafa;
+    border-radius: 15px;
+    padding: 0 24px;
+}
+
+form h2 {
+    color: #7b1fa2;
+    margin: 16px 0;
+    padding: 16px 0;
+    text-align: center;
+}
+
+form p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    padding: 12px 12px 12px 0;
+}
+
+input[type=text], input[type=number], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+/*input[type=text]:focus, input[type=number]:focus {
+    border: 3px solid #26c6da;
+}*/
+
+.btn {
+    text-align: center;
+}
+
+input[type=submit] {
+    background: #7b1fa2;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background: #26c6da;
+    color: #fafafa;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.visit {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 16px;
+}
+
+.visit .allowed {
+    color: green;
+}
+
+.visit .denied {
+    color: red;
+}
+
+.visit .total {
+    color: #7b1fa2;
+}
